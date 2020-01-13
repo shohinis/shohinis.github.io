@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Day 1 || The King's Logic Puzzle: An Interactive Logic Game</title>
+	<script src="index.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var startsFrom = window.location.href.indexOf("?enc=")+5;
+		enc = window.location.href.slice(startsFrom, );
+	</script>
+	<script type="text/javascript">
+		translatefake(enc);
+	</script>
+	<h1>The King's Logic Puzzle: An Interactive Logic Game</h1>
+	<h2>Day 1</h2>
+	<p class="prose">Despite your anxiety over your fate and that of your community, you managed to get a good night of sleep due to the comforts of the castle. You make a brief attempt to speak to a guard, but they seem very intimidating and honestly probably not bright enough to help you strategize. You enjoy a nice breakfast and make your way to the royal court, where you feel tremendously underdressed.</p>
+	<p class="prose">The king is pleased with your arrival, but a new and very stern face stands near him. The unknown woman opens her mouth and declares that she is a judge in international court; due to the king's unsteady standing in the international community, she has been observing his court and will ensure that there is no tampering with the diamonds. Otherwise, she has no interest in helping you nor the power to do so. The king scowls at her words, but you are relieved to know that the challenge will be fair.</p>
+	<p class="prose">The king gestures, and the large golden scales are wheeled out into the center of the throne room. Twelve sparkling diamonds are brought forth -- or rather, you correct yourself, eleven diamonds and one compelling replica. The trial is about to begin.</p>
+	<p class="basic">The twelve diamonds are labeled from 1 to 12. You may place each diamond on the left side, the right side, or not on the scale at all. When you are done, scroll down and press the "Done!" button.</p>
+	<div class="row">
+		<div class="column left" style="background-color:#aaa;">
+			<h2>All Diamonds</h2>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 1</h5>
+				<button type="button" id="left1" class = "offbutton" onclick="left(1)">Left Side</button>
+				<button type="button" id="right1" class = "offbutton" onclick="right(1)">Right Side</button>
+				<button type="button" id="omit1" class = "offbutton" onclick="omit(1)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 2</h5>
+				<button type="button" id="left2" class = "offbutton" onclick="left(2)">Left Side</button>
+				<button type="button" id="right2" class = "offbutton" onclick="right(2)">Right Side</button>
+				<button type="button" id="omit2" class = "offbutton" onclick="omit(2)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 3</h5>
+				<button type="button" id="left3" class = "offbutton" onclick="left(3)">Left Side</button>
+				<button type="button" id="right3" class = "offbutton" onclick="right(3)">Right Side</button>
+				<button type="button" id="omit3" class = "offbutton" onclick="omit(3)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 4</h5>
+				<button type="button" id="left4" class = "offbutton" onclick="left(4)">Left Side</button>
+				<button type="button" id="right4" class = "offbutton" onclick="right(4)">Right Side</button>
+				<button type="button" id="omit4" class = "offbutton" onclick="omit(4)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 5</h5>
+				<button type="button" id="left5" class = "offbutton" onclick="left(5)">Left Side</button>
+				<button type="button" id="right5" class = "offbutton" onclick="right(5)">Right Side</button>
+				<button type="button" id="omit5" class = "offbutton" onclick="omit(5)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 6</h5>
+				<button type="button" id="left6" class = "offbutton" onclick="left(6)">Left Side</button>
+				<button type="button" id="right6" class = "offbutton" onclick="right(6)">Right Side</button>
+				<button type="button" id="omit6" class = "offbutton" onclick="omit(6)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 7</h5>
+				<button type="button" id="left7" class = "offbutton" onclick="left(7)">Left Side</button>
+				<button type="button" id="right7" class = "offbutton" onclick="right(7)">Right Side</button>
+				<button type="button" id="omit7" class = "offbutton" onclick="omit(7)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 8</h5>
+				<button type="button" id="left8" class = "offbutton" onclick="left(8)">Left Side</button>
+				<button type="button" id="right8" class = "offbutton" onclick="right(8)">Right Side</button>
+				<button type="button" id="omit8" class = "offbutton" onclick="omit(8)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 9</h5>
+				<button type="button" id="left9" class = "offbutton" onclick="left(9)">Left Side</button>
+				<button type="button" id="right9" class = "offbutton" onclick="right(9)">Right Side</button>
+				<button type="button" id="omit9" class = "offbutton" onclick="omit(9)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 10</h5>
+				<button type="button" id="left10" class = "offbutton" onclick="left(10)">Left Side</button>
+				<button type="button" id="right10" class = "offbutton" onclick="right(10)">Right Side</button>
+				<button type="button" id="omit10" class = "offbutton" onclick="omit(10)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 11</h5>
+				<button type="button" id="left11" class = "offbutton" onclick="left(11)">Left Side</button>
+				<button type="button" id="right11" class = "offbutton" onclick="right(11)">Right Side</button>
+				<button type="button" id="omit11" class = "offbutton" onclick="omit(11)">Leave Out</button>
+			</div>
+			<div class="diamondchoices">
+				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
+				<h5 style="display:inline-block">Diamond 12</h5>
+				<button type="button" id="left12" class = "offbutton" onclick="left(12)">Left Side</button>
+				<button type="button" id="right12" class = "offbutton" onclick="right(12)">Right Side</button>
+				<button type="button" id="omit12" class = "offbutton" onclick="omit(12)">Leave Out</button>
+			</div>
+		</div>
+		<div class="column right" style="background-color:#bbb;">
+			<h2>Left Side</h2>
+			<p id="leftlist"></p>
+		</div>
+		<div class="column right" style="background-color:#bbb;">
+			<h2>Right Side</h2>
+			<p id="rightlist"></p>
+		</div>
+		<div class="column right" style="background-color:#bbb;">
+			<h2>Leave Out</h2>
+			<p id="omitlist"></p>
+		</div>
+	</div>
+	<button type="button" class="proceed" id="submit" onclick="var direction = calculate(enc); location.href=('day1results.html?enc='+enc+'&d='+btoa(direction))">Done!</button>
+</body>
+</html>

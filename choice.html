@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>The Choice || The King's Logic Puzzle: An Interactive Logic Game</title>
+	<script src="index.js"></script>
+</head>
+<body>
+	<h1>The King's Logic Puzzle: An Interactive Logic Game</h1>
+	<h2>The Choice</h2>
+	<script>
+		var startsFrom = window.location.href.indexOf("?enc=")+5;
+		var enc = window.location.href.slice(startsFrom, );
+		var temp = translatefake(enc);
+		var fake = temp[0];
+		var isLighter = temp[1];
+	</script>
+	<p class="prose">
+		The time has come to make your final choice. <i><b>INSERT MORE PROSE HERE, BLAH BLAH BLAH PRESSURE, HIGH STAKES ETC</b></i>
+	</p>
+	<p class="basic">
+		Select which diamond you believe is fake below.
+	</p>
+	<div class="diamondchoices" style="margin: auto; width: 830px">
+		<button type="button" class="diamondbutton" id="d1" onclick="dchoose(1)"> 1 </button>
+		<button type="button" class="diamondbutton" id="d2" onclick="dchoose(2)"> 2 </button>
+		<button type="button" class="diamondbutton" id="d3" onclick="dchoose(3)"> 3 </button>
+		<button type="button" class="diamondbutton" id="d4" onclick="dchoose(4)"> 4 </button>
+		<button type="button" class="diamondbutton" id="d5" onclick="dchoose(5)"> 5 </button>
+		<button type="button" class="diamondbutton" id="d6" onclick="dchoose(6)"> 6 </button>
+		<button type="button" class="diamondbutton" id="d7" onclick="dchoose(7)"> 7 </button>
+		<button type="button" class="diamondbutton" id="d8" onclick="dchoose(8)"> 8 </button>
+		<button type="button" class="diamondbutton" id="d9" onclick="dchoose(9)"> 9 </button>
+		<button type="button" class="diamondbutton" id="d10" onclick="dchoose(10)"> 10 </button>
+		<button type="button" class="diamondbutton" id="d11" onclick="dchoose(11)"> 11 </button>
+		<button type="button" class="diamondbutton" id="d12" onclick="dchoose(12)"> 12 </button>
+	</div>
+	<p class="basic">
+		Now select whether you think that diamond is heavier or lighter than the others.
+	</p>
+	<div class="weightchoices">
+		<button type="button" class="majoroffbutton" id="heavier" onclick="wchoose('heavier')"> HEAVIER </button>
+		<button type="button" class="majoroffbutton" id="lighter" onclick="wchoose('lighter')"> LIGHTER </button>
+	</div>
+	<p class="basic">***final chance***</p>
+	<button type="button" class="proceed" id="finalbutton" onclick="var nextpage = checkSubmission(fake, isLighter, dchosen, wchosen); location.href=nextpage">Proclaim My Decision</button>
+</body>
+</html>

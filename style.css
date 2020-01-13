@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 20%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.diamondbutton {
+	background-image: url(images/diamond.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	padding: 15px 25px;
+	border:none;
+	color:white;
+	font-size:22px;
+	font-weight: bolder;
+	text-align: center;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.dbselected {
+	background-image: url(images/diamond.png), url(images/glow.jfif);
+}
+
+.majoroffbutton {
+	background-color: #F5EDD3;
+	border: none;
+	font-size: 22px;
+	font-weight: normal;
+	text-align:center;
+}
+
+.majoronbutton {
+	background-color:#8BB09E;
+	border: none;
+	font-size: 22px;
+	text-align:center;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
