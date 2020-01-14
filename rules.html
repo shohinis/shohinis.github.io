@@ -5,16 +5,18 @@
 	<title>Rules || The King's Logic Puzzle: An Interactive Logic Game</title>
 </head>
 <body>
-	
-	<h1>The King's Logic Puzzle: An Interactive Logic Game</h1>
-	<h2>Rules</h2>
+	<div class="header">
+		<h1>The King's Logic Puzzle: An Interactive Logic Game</h1>
+		<h2>Rules</h2>
+	</div>
 	<p class="prose">The king is pleased with your choice; out of this he may gain an advisor, days of entertainment through your efforts to defeat him, or free reign to impose whatever punishment he desires on you. He keeps a small diary next to his throne on which he is brainstorming ideas for your fate should you fail. Should you become his advisor, you may wish to find him some less sadistic journaling ideas.<br>
 	<br>
 	The king's jester, in a trembling voice, begins to announce the rules:</p>
 	<p class="basic">The king has selected twelve diamonds from the royal treasury, obtained in the last war from a neighboring kingdom. The royal jeweler has determined that despite all twelve seeming completely identical, one of the twelve weighs very slightly more or less as it is a fake. Your task is to determine which of the diamonds is the fake and whether it weighs more or less than the others. You yourself may not touch any of the diamonds and may receive no assistance; your only tool is an extremely large, ornate, and carefully calibrated scale.<br>
 	<br>
-	You will have three days to complete the king's challenge. On each day, the king will assemble his court to watch as you choose which of the twelve diamonds to place on each side of the scale. As all hold their breath, the king's assistants will let go of the two arms, revealing whether the sides are balanced or unequal. You will then be returned to an guarded and isolated but luxurious room to think and plan the next day's strategy.</p>
-	<p class="basic">On the third and final day, once the results of the scale become apparent, you must present the fake to the king and tell him whether it weighs more or less than the others. A council of jewelers from this kingdom and its neighbors will consult and determine whether you have succeeded, determining your fate...</p>
+	You will have three days to complete the king's challenge. On each day, the king will assemble his court to watch as you choose which of the twelve diamonds to place on each side of the scale. As all hold their breath, the king's assistants will let go of the two arms, revealing whether the sides are balanced or unequal. You will then be returned to an guarded and isolated but luxurious room to think and plan the next day's strategy.<br>
+	<br>
+	On the third and final day, once the results of the scale become apparent, you must present the fake to the king and tell him whether it weighs more or less than the others. A council of jewelers from this kingdom and its neighbors will consult and determine whether you have succeeded, determining your fate...</p>
 	<p class="prose">Do you feel ready for the task? You no longer have a choice. The king's armed guard marches to your side and accompanies you to your home for the next three days, a taste both of the luxury you could enjoy if you succeed and the violent consequences of failure.</p>
 	<script type="text/javascript">
 		function initialize() {
@@ -28,6 +30,6 @@
 		var isLighter = temp[1];
 		var encoding = btoa((fake).toString()+" " + isLighter.toString());
 	</script>
-	<button type="button" class="proceed" onclick="location.href=('day1.html?enc='+encoding)">Day 1</button>
+	<button type="button" class="proceed" style="display: block; margin: 0 auto;" onclick="location.href=('day1.html?enc='+encoding)">Day 1</button>
 </body>
 </html>

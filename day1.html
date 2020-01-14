@@ -13,14 +13,18 @@
 	<script type="text/javascript">
 		translatefake(enc);
 	</script>
-	<h1>The King's Logic Puzzle: An Interactive Logic Game</h1>
-	<h2>Day 1</h2>
-	<p class="prose">Despite your anxiety over your fate and that of your community, you managed to get a good night of sleep due to the comforts of the castle. You make a brief attempt to speak to a guard, but they seem very intimidating and honestly probably not bright enough to help you strategize. You enjoy a nice breakfast and make your way to the royal court, where you feel tremendously underdressed.</p>
-	<p class="prose">The king is pleased with your arrival, but a new and very stern face stands near him. The unknown woman opens her mouth and declares that she is a judge in international court; due to the king's unsteady standing in the international community, she has been observing his court and will ensure that there is no tampering with the diamonds. Otherwise, she has no interest in helping you nor the power to do so. The king scowls at her words, but you are relieved to know that the challenge will be fair.</p>
-	<p class="prose">The king gestures, and the large golden scales are wheeled out into the center of the throne room. Twelve sparkling diamonds are brought forth -- or rather, you correct yourself, eleven diamonds and one compelling replica. The trial is about to begin.</p>
+	<div class="header">
+		<h1>The King's Logic Puzzle: An Interactive Logic Game</h1>
+		<h2>Day 1</h2>
+	</div>
+	<p class="prose">Despite your anxiety over your fate and that of your community, you managed to get a good night of sleep due to the comforts of the castle. You make a brief attempt to speak to a guard, but they seem very intimidating and honestly probably not bright enough to help you strategize. You enjoy a nice breakfast and make your way to the royal court, where you feel tremendously underdressed.<br>
+	<br>
+	The king is pleased with your arrival, but a new and very stern face stands near him. The unknown woman opens her mouth and declares that she is a judge in international court; due to the king's unsteady standing in the international community, she has been observing his court and will ensure that there is no tampering with the diamonds. Otherwise, she has no interest in helping you nor the power to do so. The king scowls at her words, but you are relieved to know that the challenge will be fair.<br>
+	<br>
+	The king gestures, and the large golden scales are wheeled out into the center of the throne room. Twelve sparkling diamonds are brought forth -- or rather, you correct yourself, eleven diamonds and one compelling replica. The trial is about to begin.</p>
 	<p class="basic">The twelve diamonds are labeled from 1 to 12. You may place each diamond on the left side, the right side, or not on the scale at all. When you are done, scroll down and press the "Done!" button.</p>
-	<div class="row">
-		<div class="column left" style="background-color:#aaa;">
+	<div class="row" style="text-align:center">
+		<div class="column left">
 			<h2>All Diamonds</h2>
 			<div class="diamondchoices">
 				<img src="images/diamond.png" height=30 style="display:inline-block; vertical-align: middle">
@@ -107,19 +111,21 @@
 				<button type="button" id="omit12" class = "offbutton" onclick="omit(12)">Leave Out</button>
 			</div>
 		</div>
-		<div class="column right" style="background-color:#bbb;">
+		<div class="column right">
 			<h2>Left Side</h2>
-			<p id="leftlist"></p>
+			<p class="diamondlist" id="leftlist"></p>
 		</div>
-		<div class="column right" style="background-color:#bbb;">
+		<div class="column right">
 			<h2>Right Side</h2>
-			<p id="rightlist"></p>
+			<p class="diamondlist" id="rightlist"></p>
 		</div>
-		<div class="column right" style="background-color:#bbb;">
+		<div class="column right">
 			<h2>Leave Out</h2>
-			<p id="omitlist"></p>
+			<p class="diamondlist" id="omitlist"></p>
 		</div>
 	</div>
-	<button type="button" class="proceed" id="submit" onclick="var direction = calculate(enc); location.href=('day1results.html?enc='+enc+'&d='+btoa(direction))">Done!</button>
+	<div class="question" style="margin: 20px">
+		<button type="button" class="proceed" id="submit" onclick="var direction = calculate(enc); location.href=('day1results.html?enc='+enc+'&d='+btoa(direction))">Done!</button>
+	</div>
 </body>
 </html>

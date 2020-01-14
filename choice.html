@@ -6,8 +6,10 @@
 	<script src="index.js"></script>
 </head>
 <body>
-	<h1>The King's Logic Puzzle: An Interactive Logic Game</h1>
-	<h2>The Choice</h2>
+	<div class="header">
+		<h1>The King's Logic Puzzle: An Interactive Logic Game</h1>
+		<h2>The Choice</h2>
+	</div>
 	<script>
 		var startsFrom = window.location.href.indexOf("?enc=")+5;
 		var enc = window.location.href.slice(startsFrom, );
@@ -38,11 +40,11 @@
 	<p class="basic">
 		Now select whether you think that diamond is heavier or lighter than the others.
 	</p>
-	<div class="weightchoices">
+	<div class="weightchoices" style="text-align: center">
 		<button type="button" class="majoroffbutton" id="heavier" onclick="wchoose('heavier')"> HEAVIER </button>
 		<button type="button" class="majoroffbutton" id="lighter" onclick="wchoose('lighter')"> LIGHTER </button>
 	</div>
 	<p class="basic">***final chance***</p>
-	<button type="button" class="proceed" id="finalbutton" onclick="var nextpage = checkSubmission(fake, isLighter, dchosen, wchosen); location.href=nextpage">Proclaim My Decision</button>
+	<button type="button" class="proceed" style="display: block; margin: 0 auto;" id="finalbutton" onclick="var nextpage = checkSubmission(fake, isLighter, dchosen, wchosen); location.href=nextpage">Proclaim My Decision</button>
 </body>
 </html>
