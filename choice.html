@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>The Choice || The King's Logic Puzzle: An Interactive Logic Game</title>
+	<title>The Choice || The King's Challenge: An Interactive Logic Game</title>
 	<script src="index.js"></script>
 </head>
 <body>
 	<div class="header">
-		<h1>The King's Logic Puzzle: An Interactive Logic Game</h1>
+		<h1>The King's Challenge: An Interactive Logic Game</h1>
 		<h2>The Choice</h2>
 	</div>
 	<script>
@@ -18,7 +18,7 @@
 		var isLighter = temp[1];
 	</script>
 	<p class="prose">
-		The time has come to make your final choice. <i><b>INSERT MORE PROSE HERE, BLAH BLAH BLAH PRESSURE, HIGH STAKES ETC</b></i>
+		The time has come to make your final choice. The audience hushes each other as they wait to hear your decision. You clear your throat.
 	</p>
 	<p class="basic">
 		Select which diamond you believe is fake below.
@@ -44,7 +44,7 @@
 		<button type="button" class="majoroffbutton" id="heavier" onclick="wchoose('heavier')"> HEAVIER </button>
 		<button type="button" class="majoroffbutton" id="lighter" onclick="wchoose('lighter')"> LIGHTER </button>
 	</div>
-	<p class="basic">***final chance***</p>
+	<p class="basic">Remember, this is your last chance to change your mind. Submit your decision below.</p>
 	<button type="button" class="proceed" style="display: block; margin: 0 auto;" id="finalbutton" onclick="var nextpage = checkSubmission(fake, isLighter, dchosen, wchosen); location.href=nextpage">Proclaim My Decision</button>
 </body>
 </html>

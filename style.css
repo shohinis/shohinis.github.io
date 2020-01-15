@@ -166,6 +166,7 @@ html {
 	background-color: #F5EDD3;
 	border: none;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-variant: small-caps;
 	font-size: 15px;
 	font-weight: normal;
 	text-align:center;
@@ -176,6 +177,7 @@ html {
 	background-color: #ACC7B9;
 	border: solid #592941;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-variant: small-caps;
 	font-size: 15px;
 	font-weight: normal;
 	text-align:center;
